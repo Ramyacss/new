@@ -1,0 +1,69 @@
+<html>
+<title> Login page </title>
+<body background="s3.jpg">
+<h1 align="center" style="color:red"> Create your account</h1>
+<script>
+function loginValidate() {
+  var u1 = document.getElementById("uname").value;
+  var p1 = document.getElementById("pname").value;
+  var e1 = document.getElementById("ename").value;
+  var atposition=e1.indexOf("@");  
+  var dotposition=e1.lastIndexOf("."); 
+  	if (u1 == " "|| u1==null) {
+   	 	alert("Name must be filled out");
+  	}
+	if (p1 == " " || p1==null) {
+   		 alert("password must be filled out");
+  	}
+	if (p1.length < 8) {
+        	alert("Your password must be at least 8 characters"); 
+    	}
+    	if (p1.search(/[a-z]/) < 0) {
+        	alert("Your password must contain at least one small letter.");
+    	}
+	if (p1.search(/[A-Z]/) < 0) {
+        	alert("Your password must contain at least one capital letter.");
+    	}
+    	if (p1.search(/[0-9]/) < 0) {
+        	alert("Your password must contain at least one digit."); 
+    	}
+	if (e1 == " " || e1==null) {
+    		alert("emailname  must be filled out");
+  	}
+ 
+	if (atposition<1 || dotposition<atposition+2 || dotposition+2>=e1.length){  
+ 	 	alert("Please enter a valid e-mail address");  
+  	}  
+}
+</script>
+	<form name="myform" align="center" action="create.html" onsubmit="loginValidate()" style="color:pink">
+		Username:<input type="text" id="uname"  autofocus required placeholder="Username"><br><br>
+		FristName:<input type="text" id="fname"><br><br>
+		LastName:<input type="text" id="lname"><br><br>
+		Password:<input type="password" id="pname" autofocus required placeholder="password"><br><br>
+		Email:<input type="text"  autofocus required placeholder="Email"><br><br>
+		Address:<textarea></textarea><br><br>
+                <span>country</span><select>
+		<option value=""></option>
+  		<option value="India">India</option>
+  		<option value="USA">USA</option>
+  		<option value="Germany">Germany</option>
+                </select>
+	<span>State</span><select>
+		<option value=""></option>
+  		<option value="Ap">Ap</option>
+  		<option value="Karnataka">Karnataka</option>
+  		<option value="TamilNadu">TamilNadu</option>
+                </select>
+	<span>City</span><select>
+		<option value=""></option>
+  		<option value="hyderabad">hyderabad</option>
+  		<option value="Bangalore">Bangalore</option>
+  		<option value="chennai">chennai</option>
+                </select>
+		Pincode:<input type="text"  autofocus required placeholder="pincode"><br><br>
+                                DateofBirth:<input type="date"  ><br></br>
+		<input id="b1" type="submit" value="submit" >
+	</form>
+</body>
+</html>

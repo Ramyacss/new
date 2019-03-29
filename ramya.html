@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".b1").click(function(){
+    $("p").toggleClass("id");
+  });
+});
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggleClass("main");
+  });
+});
+
+</script>
+<style>
+.main {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.id{
+background-color:yellow;
+}
+</style>
+</head>
+<body>
+<h1>Creative works</h1>
+<div id="id">
+<p class="main"> Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks. A "complete" computer including the hardware, the operating system (main software), and peripheral equipment required and used for "full" operation can be referred to as a computer system. This term may as well be used for a group of computers that are connected and work together, in particular a computer network or computer cluster.</p>
+</div>
+<div id="id">
+<p class="main">rial and consumer devices. This includes simple special purpose devices like microwave ovens and remote controls, factory devices such as industrial robots and computer-aided design, and also general purpose devices like personal computers and mobile devices such as smartphones. The Internet is run on computers and it connects hundreds of millions of other computers and their users.</p>
+</div>
+<div id="id">
+<p class="main">e ancient times, simple manual devices like the abacus aided people in doing calculations. Early in the Industrial Revolution, some mechanical devices were built to automate long tedious tasks, such as guiding patterns for looms. More sophisticated electrical machines did specialized analog calculations in the early 20th century. The first digital electronic calculating machines were developed during World War II. The speed, power, and versatility of computers have been increasing dramatically ever since then.</p>
+</div>
+<button>Toggle border</button>
+
+<button class="b1">Toggle color</button>
+</body>
+</html>

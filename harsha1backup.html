@@ -1,0 +1,304 @@
+﻿<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src=""></script>
+
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+<!-- Slideshow container -->
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>CSS CORP</h1>
+
+        <div class="navbar">
+            <a href="#" class="active">Services</a>
+            <a href="C:/Users/training/Desktop/Harsha/ramya.html">Log-in</a>
+            <a href="#">Register </a>
+            <a href="#">Carrer</a>
+            <a href="#">About us</a>
+            <a href="#" class="right">Contact-us</a>
+        </div>
+
+        </div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="s1.gif" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="s2.gif" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="s3.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">4/ 4</div>
+  <img src="i1.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="i2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+
+
+
+
+
+
+
+
+        <div class="row">
+           <!-- <div class="heading">
+                <h1>Main Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+            </div>
+            <div class="grid-container">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>  
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>  
+                    <div class="grid-item">7</div>
+                    <div class="grid-item">8</div>
+            </div>-->
+
+        </div>
+        <section>
+            <div class="heading">
+                <h1> Infotech solutions  </h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                <div class="head-container">
+                        <div class="grid-item">
+                            <h1>Customer  </h1>
+                            <p> Infotech solutions offers end-to-end customer clustering and deeper insights into customer sentiments, buying behavior and satisfaction-levels, to drive business success. Other offerings include Churn Analytics, CX Improvements (CSAT, NPS), Operational Excellence and Productivity improvements. Powered by AI, our platform helps brands understand finer details about customer’s lifecycle. Data collected from heterogeneous sources is analyzed, filtered to pave way for actionable insights that service providers can consume. They help in analyzing customer churn, buying patterns, CX improvements, (CSAT and NPS), customer sentiments and satisfaction levels.</p>
+                        </div>
+                         <div class="grid-item">
+                            <h1>Analytics</h1>
+                            <p> Infotech solutions offers end-to-end customer clustering and deeper insights into customer sentiments, buying behavior and satisfaction-levels, to drive business success. Other offerings include Churn Analytics, CX Improvements (CSAT, NPS), Operational Excellence and Productivity improvements. Powered by AI, our platform helps brands understand finer details about customer’s lifecycle. Data collected from heterogeneous sources is analyzed, filtered to pave way for actionable insights that service providers can consume. They help in analyzing customer churn, buying patterns, CX improvements, (CSAT and NPS), customer sentiments and satisfaction levels.</p>
+                        </div>
+                         <div class="grid-item">
+                            <h1> Experience </h1>
+                            <p>Harsha Infotech solutions offers end-to-end customer clustering and deeper insights into customer sentiments, buying behavior and satisfaction-levels, to drive business success. Other offerings include Churn Analytics, CX Improvements (CSAT, NPS), Operational Excellence and Productivity improvements. Powered by AI, our platform helps brands understand finer details about customer’s lifecycle. Data collected from heterogeneous sources is analyzed, filtered to pave way for actionable insights that service providers can consume. They help in analyzing customer churn, buying patterns, CX improvements, (CSAT and NPS), customer sentiments and satisfaction levels.</p>
+                        </div>
+                         <div class="grid-item">
+                            <h1>Customer  </h1>
+                            <p>Harsha Infotech solutions end-to-end customer clustering and deeper insights into customer sentiments, buying behavior and satisfaction-levels, to drive business success. Other offerings include Churn Analytics, CX Improvements (CSAT, NPS), Operational Excellence and Productivity improvements. Powered by AI, our platform helps brands understand finer details about customer’s lifecycle. Data collected from heterogeneous sources is analyzed, filtered to pave way for actionable insights that service providers can consume. They help in analyzing customer churn, buying patterns, CX improvements, (CSAT and NPS), customer sentiments and satisfaction levels.</p>
+                        </div>
+
+                </div>
+            </div>
+            <div class="heading">
+                    <h1 align="center">Sidebar</h1>
+                    <div class="grid-container">
+                          
+                            <div class="grid-item">
+                                <img src="i1.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img src="i2.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img src="i3.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img src="i4.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img src="i5.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                    <img src="i6.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                <img src="i7.jpg" alt="">
+                            </div>
+                            <div class="grid-item">
+                                    <img src="i8.jpg" alt="">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="i9.jpg" alt="">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="i10.jpg" alt="">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="i11.jpg" alt="">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="i12.jpg" alt="">
+                                </div>
+                                <div class="grid-item">
+                                        <img src="i7.jpg" alt="">
+                                </div>
+                                <div class="grid-item">
+                                    <img src="i5.jpg" alt="">
+                                </div>
+                    </div>
+            </div>
+
+        </section>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+    </body>
+</html>
